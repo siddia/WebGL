@@ -38,7 +38,7 @@ function init() {
   //Load Model
 
   let loader = new THREE.GLTFLoader();
-  loader.load("./house/T13.glb", function(gltf) {
+  loader.load("./house/T13Tex.glb", function(gltf) {
     scene.add(gltf.scene);
     // renderer.render(scene,camera);
     house = gltf.scene.children[0];
