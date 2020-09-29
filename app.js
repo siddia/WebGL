@@ -45,13 +45,6 @@ function init() {
     animate();
   });
 
-  // let loader = new THREE.STLLoader();
-  // loader.load("./house/T13-room.stl", function(stl) {
-  //   scene.add(stl.scene);
-  //   renderer.render(scene,camera);
-  //   house = stl.scene.children[0];
-  //   animate();
-  // });
 
   // let loader = new THREE.OBJLoader();
   // loader.load("./house/tinker.obj", function(obj) {
@@ -61,9 +54,12 @@ function init() {
   //   animate();
   // });
 
+
 }
 
+
 function animate() {
+//old rotate
   requestAnimationFrame(animate);
   house.rotation.y += 0.005;
   house.rotation.x += 0.0005;
